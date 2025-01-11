@@ -1,0 +1,18 @@
+{
+    "nats": {
+        "servers": "nats://localhost:4222"
+    },
+    "db": {
+        "connectionString": "your-connection-string"
+    },
+    "jetstream": {
+        "wantedDids": []
+    },
+    "accounts": {
+        "bot": {
+            "identifier": "bluesky-handle",
+            "password": "app-passkey or pass key"
+        },
+        "trigger_handle": "handle to trigger signup / quit commands"
+    }
+}
