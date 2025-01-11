@@ -7,8 +7,7 @@ BlueQuest is a series of libraries and services designed to create games on the 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Project Structure](#project-structure)
-- [License](#license)
+- [Example](#example)
 
 ## Installation
 
@@ -30,14 +29,14 @@ npm run build
 
 Configuration files are located in the `config` directory. You can specify different environments to fit whatever naming convention you need.
 
-### Key Components
+## Key Components
 
 - **Models**: Define the data structures used in the game framework
 - **Services**: Provide functionality for interacting with the database, managing player activities, and handling commands.
 - **Utilities**: Contain helper functions for various tasks.
 - **Configuration**: JSON files for different environments.
 
-### Example
+## Example
 
 This is a very minimal and untested example. It will be more detailed in the future.
 
