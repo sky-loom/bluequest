@@ -107,7 +107,7 @@ export class JetstreamIngest {
 
     if (record.length > 0) {
       if (record[0] == "@") {
-        await this.parseSkeetstivalCommand(accountdid, record);
+        await this.parseStatusCommand(accountdid, record);
       } else if (record[0] == "!") {
         //are they playing?
         if (this.repo.isPlayerPlaying(accountdid)) {
@@ -118,7 +118,7 @@ export class JetstreamIngest {
     }
   }
 
-  async parseSkeetstivalCommand(accountdid: string, input: string): Promise<void> {
+  async parseStatusCommand(accountdid: string, input: string): Promise<void> {
     const trigger = "@" + ConfigLoader.load().accounts.trigger_handle;
     const parts = input.split(" ");
 
